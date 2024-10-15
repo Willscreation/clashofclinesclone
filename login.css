@@ -8,7 +8,7 @@
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   min-height: 100vh;
   background: url('image/phone.png') no-repeat;
   background-size: cover;
@@ -61,6 +61,7 @@ body {
   top: 30%;
   transform: translate(-50%);
   font-size: 20px;
+  cursor: pointer;
 }
 
 .wrapper .btn {
@@ -92,3 +93,7 @@ body {
 .register-link p a:hover {
   text-decoration: underline;
 }
+
+
+
+

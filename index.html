@@ -5,18 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark Theme Header</title>
     <link rel="stylesheet" href="main.css">
-    <style>/*first*/
-           * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+    <style>
         body {
-            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
+            background-color: #5b23df;   
         }
 
         .hero-section {
@@ -32,21 +24,19 @@
             height: auto;
         }
 
-        .hero-content {
+        .content {
             max-width: 50%;
             padding-left: 40px;
         }
-         h1 {
-            color:#fff;
-        }
+         
 
-        .hero-content h1 {
+        .content h1 {
             font-size: 36px;
             font-weight: bold;
             color: #ffffff;
         }
 
-        .hero-content p {
+        .content p {
             font-size: 18px;
             color: #ffffff;
             line-height: 1.6;
@@ -68,15 +58,10 @@
         }
 
         .download-buttons a img {
-            width: 150px;
+            width: 130px;
             height: auto;
         }
-     /*second*/
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #5b23df;
-        }
-
+        
         .section {
             display: flex;
             justify-content: space-between;
@@ -136,79 +121,19 @@
                 margin-bottom: 20px;
             }
         }
-           /*third*/
-        .footer {
-            background-color: #000;
-            padding: 20px 40px;
-            color: white;
-        }
-
-        .footer .top-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #333;
-        }
-
-        .footer .social-links a {
-            margin-right: 15px;
-        }
-
-        .footer .social-links img {
-            width: 30px;
-            height: 30px;
-        }
-
-        .footer .download-buttons a img {
-            width: 150px;
-            margin-left: 20px;
-        }
-
-        .footer .bottom-section {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .footer .bottom-section a {
-            margin: 0 10px;
-            color: #aaa;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .footer .bottom-section a:hover {
-            color: #fff;
-        }
-
-        @media (max-width: 768px) {
-            .footer .top-section {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .footer .download-buttons a {
-                margin-top: 20px;
-            }
-        }
     </style>
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header>
-        
+    <header>  
         <img src="image/main_logo.webp" alt="coc logo" class="logo">
         <div class="nav">
-        
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="#community">Community</a></li>
-                <li><a href="#guides">Guides</a></li>
-                <li><a href="#download">Download</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About-us</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="download.html">Download</a></li>
             </ul>
         </nav>
         <a href="login.html" class="cta-button">Login</a>
@@ -216,87 +141,78 @@
     </header>
     <!-- Hero Section -->
     <section class="hero">
-        
         <div class="hero-content">
-            
-            <h1>Welcome to Clash of Clans</h1>
+            <h1 style="color: #fff;">Welcome to Clash of Clans</h1>
             <p>Join the battle and build your empire!</p>
-            <a href="login.html" class="cta-button">Play Now</a>
+            <a href="download.html" class="cta-button">Play Now</a>
         </div>
     </section>
-
         <div class="hero-section">
             <!-- Left Side: Image -->
             <div class="hero-image">
                 <img src="image/image1.webp" alt="Clash of Clans Mobile Image">
             </div>
-        
             <!-- Right Side: Text and Buttons -->
-            <div class="hero-content">
+            <div class="content">
                 <h1 style="color:black;">LEAD YOUR CLAN TO VICTORY!</h1>
                 <p style="color: #000;">Answer the call of the mustache! Join the international fray that is Clash of Clans. Customize your village, build an army, and crush your opponents. Like using friendship to strike fear into your enemies? Join a Clan, or establish a Clashing legacy by creating your own. The choice is yours in this millions-strong community of Barbarians. Download for free and Clash on, Chief!</p>
-        
                 <!-- Download Buttons -->
                 <div class="download-buttons">
-                    <a href="#"><img src="image/appstore.webp" alt="Download on App Store"></a>
-                    <a href="#"><img src="image/googleplay.webp" alt="Download on Google Play"></a>
+                    <a href="https://apps.apple.com/us/app/clash-of-clans/id529479190"><img src="image/appstore.webp" alt="Download on App Store"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans"><img src="image/googleplay.webp" alt="Download on Google Play"></a>
                     <a href="#"><img src="image/amazon_appstore.webp" alt="Available on Amazon"></a>
                 </div>
             </div>
         </div>
         <div class="section">
     <!-- Left Content Block -->
-    <div class="content">
-        <h1>SEE THE LATEST</h1>
-        <p>To stay on top of your game, keep an eye on the in-game News section. Follow us on social media for the latest chatter and sneak peeks on what the team is working on. Don’t be a stranger and join the conversation.</p>
-        
-        <!-- Social Icons -->
-        <div class="social-icons">
-            <a href="#"><img src="image/reddit.webp" alt="Reddit"></a>
-            <a href="#"><img src="image/youtube.webp" alt="YouTube"></a>
-            <a href="#"><img src="image/facebook.webp" alt="Facebook"></a>
-            <a href="#"><img src="image/twitter.webp" alt="Twitter"></a>
-            <a href="#"><img src="image/instagram.webp" alt="Instagram"></a>
-            <a href="#"><img src="image/discord.webp" alt="Discord"></a>
+        <div class="content">
+            <h1>SEE THE LATEST</h1>
+            <p>To stay on top of your game, keep an eye on the in-game News section. Follow us on social media for the latest chatter and sneak peeks on what the team is working on. Don’t be a stranger and join the conversation.</p>
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="https://www.reddit.com/r/ClashOfClans"><img src="image/reddit.webp" alt="Reddit"></a>
+                <a href="https://youtube.com/@clashofclans?si=vpk4mTODjxDs_lPF"><img src="image/youtube.webp" alt="YouTube"></a>
+                <a href="https://www.facebook.com/ClashofClans"><img src="image/facebook.webp" alt="Facebook"></a>
+                <a href="https://x.com/clashofclans"><img src="image/twitter.webp" alt="Twitter"></a>
+                <a href="https://www.instagram.com/clashofclans?igsh=MTRzdjBrdHMxZHRlNQ=="><img src="image/instagram.webp" alt="Instagram"></a>
+                <a href="https://discord.com/invite/clashofclans"><img src="image/discord.webp" alt="Discord"></a>
+            </div>
+        </div>
+        <!-- Right Image Block -->
+        <div class="phone-image">
+            <img src="image/image2.webp" alt="Clash of Clans News">
         </div>
     </div>
-
-    <!-- Right Image Block -->
-    <div class="phone-image">
-        <img src="image/image2.webp" alt="Clash of Clans News">
-    </div>
-</div>
-<footer class="footer">
+    <footer class="footer">
     <!-- Top section with social links and download buttons -->
-    <div class="top-section">
-        <div class="social-links">
-            <p>Follow us on</p>
-            <a href="#"><img src="image/youtube.webp" alt="YouTube"></a>
-            <a href="#"><img src="image/facebook.webp" alt="Facebook"></a>
-            <a href="#"><img src="image/instagram.webp" alt="Instagram"></a>
-            <a href="#"><img src="image/twitter.webp" alt="Twitter"></a>
-            <a href="#"><img src="image/reddit.webp" alt="Reddit"></a>
-            <a href="#"><img src="image/discord.webp" alt="Discord"></a>
+        <div class="top-section">
+            <div class="social-links">
+                <p>Follow us on</p>
+                <a href="https://www.reddit.com/r/ClashOfClans"><img src="image/reddit.webp" alt="Reddit"></a>
+                <a href="https://youtube.com/@clashofclans?si=vpk4mTODjxDs_lPF"><img src="image/youtube.webp" alt="YouTube"></a>
+                <a href="https://www.facebook.com/ClashofClans"><img src="image/facebook.webp" alt="Facebook"></a>
+                <a href="https://x.com/clashofclans"><img src="image/twitter.webp" alt="Twitter"></a>
+                <a href="https://www.instagram.com/clashofclans?igsh=MTRzdjBrdHMxZHRlNQ=="><img src="image/instagram.webp" alt="Instagram"></a>
+                <a href="https://discord.com/invite/clashofclans"><img src="image/discord.webp" alt="Discord"></a>
+            </div>
+            <div class="download-buttons">
+                <p>Download games from </p>
+                <a href="https://apps.apple.com/us/app/clash-of-clans/id529479190"><img src="image/appstore.webp" alt="App Store"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans"><img src="image/googleplay.webp" alt="Google Play"></a>
+            </div>
         </div>
-        
-        <div class="download-buttons">
-            <p>Download games from </p>
-            <a href="#"><img src="image/appstore.webp" alt="App Store"></a>
-            <a href="#"><img src="image/googleplay.webp" alt="Google Play"></a>
+        <!-- Bottom section with legal links -->
+        <div class="bottom-section">
+            <a href="https://supercell.com/en/terms-of-service/#2">Terms of Service</a>
+            <a href="https://supercell.com/en/privacy-policy/?">Privacy Policy</a>
+            <a href="https://supercell.com/en/parents/">Parent's Guide</a>
+            <a href="https://supercell.com/en/safe-and-fair-play/">Safe and Fair Play Policy</a>
+            <a href="https://supercell.com/en/our-legal-documents/">Other Legal Docs</a>
+            <a href="https://supercell.com/en/for-media/">For Media</a>
+            <a href="https://supercell.com/en/our-domains/">Our Domains</a>
+            <a href="https://supercell.com/en/#">Manage Cookies</a>
         </div>
-    </div>
-
-    <!-- Bottom section with legal links -->
-    <div class="bottom-section">
-        <a href="#">Terms of Service</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Parent's Guide</a>
-        <a href="#">Safe and Fair Play Policy</a>
-        <a href="#">Other Legal Docs</a>
-        <a href="#">For Media</a>
-        <a href="#">Our Domains</a>
-        <a href="#">Manage Cookies</a>
-    </div>
     </footer>
 </body>
 </html>
