@@ -1,113 +1,114 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
-    height: 100%; /* Full height for the body */
+    height: 100%;
     font-family: Arial, sans-serif;
 }
-.hero-content h1{
+
+.hero-content h1 {
     color: #000;
 }
 
-/* Header Styles */
 header {
-    background-color: #000; /* Dark background color */
-    color: #ffffff; /* White text color */
-    padding: 15px 20px; /* Padding for spacing */
-    display: flex; /* Flexbox for layout */
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Center items vertically */
+    background-color: #000;
+    color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    height: 60px; /* Adjust the height as needed */
-    width: auto; /* Maintain aspect ratio */
+    height: 60px;
+    width: auto;
     margin-right: 20px;
 }
+
 nav ul {
-    text-align:left;
-    list-style: none; /* Remove bullet points */
-    display: flex; /* Horizontal layout */
+    text-align: left;
+    list-style: none;
+    display: flex;
 }
-.nav{
+
+.nav {
     display: flex;
     align-items: center;
 }
 
 nav ul li {
-    text-align:left;
-    margin: 0 15px; /* Space between menu items */
+    text-align: left;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove underline */
-    color: #ffffff; /* White text for links */
-    transition: color 0.3s; /* Smooth transition on hover */
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Change color on hover */
+    color: #ffcc00;
 }
 
 .cta-button {
-    background-color: #ffcc00; /* Bright button color */
-    color: #000; /* Dark text color for button */
-    padding: 10px 20px; /* Padding for button */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth transition on hover */
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #e6b800; /* Darker button color on hover */
+    background-color: #e6b800;
 }
 
-/* Hero Section */
 .hero {
-    background-image: url('image/phone.png'); /* Replace with your image path */
-    background-size: cover; /* Cover the entire section */
-    background-position: center; /* Center the image */
-    height: 100vh; /* Full viewport height */
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    color: #ffffff; /* White text color */
-    text-align: center; /* Center text */
-    position: relative; /* Position for overlay */
+    background-image: url('image/phone.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
 }
 
-/* Dark Overlay */
 .hero:before {
     content: '';
-    position: absolute; /* Position overlay */
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    z-index: 1; /* Place overlay above background */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .hero-content {
-    position: relative; /* Position content above overlay */
-    z-index: 2; /* Ensure content is above overlay */
+    position: relative;
+    z-index: 2;
 }
 
 .hero h1 {
-    font-size: 48px; /* Large title font size */
-    margin-bottom: 10px; /* Space below title */
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 24px; /* Subtitle font size */
-    margin-bottom: 20px; /* Space below paragraph */
+    font-size: 24px;
+    margin-bottom: 20px;
 }
+
 .footer {
     background-color: #000;
     padding: 20px 40px;
@@ -119,7 +120,7 @@ nav ul li a:hover {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid #333;
+    border-bottom: 3px solid #333;
 }
 
 .footer .social-links a {

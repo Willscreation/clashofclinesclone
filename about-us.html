@@ -3,59 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Theme Header</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body> 
+    <title>About Us | Clash of Clans</title>
+    <link rel="stylesheet" href="main.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .wrapper {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
 
+        .wrapper h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #e67e22;
+        }
+
+        .wrapper p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            color: #f39c12;
+            margin-bottom: 15px;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section ul li::before {
+            content: "✔";
+            margin-right: 8px;
+            color: #e67e22;
+        }
+
+        .team {
+            margin-top: 50px;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap:wrap;
+        }
+
+        .member {
+            width: 30%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #e67e22;
+            margin-bottom: 10px;
+        }
+
+        .member h3 {
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .member p {
+            font-size: 14px;
+            color: #bdc3c7;
+        }
+
+    </style>
+</head>
+<body>
     <!-- Header Section -->
     <header>
-        <img src="image/main_logo.webp" alt="coc logo" class="logo">
+        <img src="image/main_logo.webp" alt="Clash of Clans Logo" class="logo">
         <div class="nav">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About-us</a></li>
-                <li><a href="index.html">Community</a></li>
-                <li><a href="index.html">Guides</a></li>
-                <li><a href="index.html">Download</a></li>
-            </ul>
-        </nav>
-        <a href="login.html" class="cta-button">Login</a>
-    </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="guides.html">Guides</a></li>
+                    <li><a href="download.html">Download</a></li>
+                </ul>
+            </nav>
+            <a href="login.html" class="cta-button">Login</a>
+        </div>
     </header>
-        
-        <footer class="footer">
-            <!-- Top section with social links and download buttons -->
-            <div class="top-section">
-                <div class="social-links">
-                    <p>Follow us on</p>
-                    <a href="https://www.reddit.com/r/ClashOfClans"><img src="image/reddit.webp" alt="Reddit"></a>
-                    <a href="https://youtube.com/@clashofclans?si=vpk4mTODjxDs_lPF"><img src="image/youtube.webp" alt="YouTube"></a>
-                    <a href="https://www.facebook.com/ClashofClans"><img src="image/facebook.webp" alt="Facebook"></a>
-                    <a href="https://x.com/clashofclans"><img src="image/twitter.webp" alt="Twitter"></a>
-                    <a href="https://www.instagram.com/clashofclans?igsh=MTRzdjBrdHMxZHRlNQ=="><img src="image/instagram.webp" alt="Instagram"></a>
-                    <a href="https://discord.com/invite/clashofclans"><img src="image/discord.webp" alt="Discord"></a>
-                </div>
-                
-                <div class="download-buttons">
-                    <p>Download games from </p>
-                    <a href="https://apps.apple.com/us/app/clash-of-clans/id529479190"><img src="image/appstore.webp" alt="App Store"></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans"><img src="image/googleplay.webp" alt="Google Play"></a>
+
+    <!-- About Us Content -->
+    <div class="wrapper">
+        <div class="header">
+            <h1>About Us</h1>
+            <p>Welcome to the ultimate Clash of Clans experience!</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>Our Mission</h2>
+                <p>Our mission is to provide Clash of Clans players with a seamless platform to improve their gameplay,
+                    share strategies, and connect with other passionate players.</p>
+            </div>
+
+            <div class="section">
+                <h2>What We Offer</h2>
+                <ul>
+                    <li>Exclusive Clash of Clans tips and strategies</li>
+                    <li>Customizable clan management tools</li>
+                    <li>Exclusive event and tournament updates</li>
+                    <li>Community forum for sharing experiences</li>
+                </ul>
+            </div>
+
+            <div class="team">
+                <h2>Meet Our Team</h2>
+                <div class="team-members">
+                    <div class="member">
+                        <img src="image/member1.jpg" alt="Team Member 1">
+                        <h3>Ashwin Rodrigues</h3>
+                        <p>III BCA</p>
+                    </div>
+                    <div class="member">
+                        <img src="image/member2.jpg" alt="Team Member 2">
+                        <h3>Vineeth Monis</h3>
+                        <p>III BCA</p>
+                    </div>
                 </div>
             </div>
-        
-            <!-- Bottom section with legal links -->
-            <div class="bottom-section">
-                <a href="https://supercell.com/en/terms-of-service/#2">Terms of Service</a>
-                <a href="https://supercell.com/en/privacy-policy/?">Privacy Policy</a>
-                <a href="https://supercell.com/en/parents/">Parent's Guide</a>
-                <a href="https://supercell.com/en/safe-and-fair-play/">Safe and Fair Play Policy</a>
-                <a href="https://supercell.com/en/our-legal-documents/">Other Legal Docs</a>
-                <a href="https://supercell.com/en/for-media/">For Media</a>
-                <a href="https://supercell.com/en/our-domains/">Our Domains</a>
-                <a href="https://supercell.com/en/#">Manage Cookies</a>
+            <div class="contact">
+                <h1>Contact us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus expedita optio molestiae minus eligendi aut neque eveniet, fugit magnam, voluptate, delectus dolores qui fugiat! Exercitationem consectetur impedit aliquam placeat deserunt.</p>
+
             </div>
-            </footer>       
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Top section with social links and download buttons -->
+        <div class="top-section">
+            <div class="social-links">
+                <p>Follow us on</p>
+                <a href="https://www.reddit.com/r/ClashOfClans"><img src="image/reddit.webp" alt="Reddit"></a>
+                <a href="https://youtube.com/@clashofclans?si=vpk4mTODjxDs_lPF"><img src="image/youtube.webp"
+                        alt="YouTube"></a>
+                <a href="https://www.facebook.com/ClashofClans"><img src="image/facebook.webp" alt="Facebook"></a>
+                <a href="https://x.com/clashofclans"><img src="image/twitter.webp" alt="Twitter"></a>
+                <a href="https://www.instagram.com/clashofclans?igsh=MTRzdjBrdHMxZHRlNQ=="><img
+                        src="image/instagram.webp" alt="Instagram"></a>
+                <a href="https://discord.com/invite/clashofclans"><img src="image/discord.webp" alt="Discord"></a>
+            </div>
+
+            <div class="download-buttons">
+                <p>Download games from </p>
+                <a href="https://apps.apple.com/us/app/clash-of-clans/id529479190"><img src="image/appstore.webp"
+                        alt="App Store"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans"><img
+                        src="image/googleplay.webp" alt="Google Play"></a>
+            </div>
+        </div>
+
+        <!-- Bottom section with legal links -->
+        <div class="bottom-section">
+            <a href="https://supercell.com/en/terms-of-service/#2">Terms of Service</a>
+            <a href="https://supercell.com/en/privacy-policy/?">Privacy Policy</a>
+            <a href="https://supercell.com/en/parents/">Parent's Guide</a>
+            <a href="https://supercell.com/en/safe-and-fair-play/">Safe and Fair Play Policy</a>
+            <a href="https://supercell.com/en/our-legal-documents/">Other Legal Docs</a>
+            <a href="https://supercell.com/en/for-media/">For Media</a>
+            <a href="https://supercell.com/en/our-domains/">Our Domains</a>
+            <a href="https://supercell.com/en/#">Manage Cookies</a>
+        </div>
+    </footer>
 </body>
 </html>
