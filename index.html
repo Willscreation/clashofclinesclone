@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -107,6 +108,29 @@
         }
 
         @media (max-width: 768px) {
+            .logo {
+                width: 50px;
+                height: 30px;
+            }
+
+            nav ul li {
+                text-align: left;
+                margin: 0 2px;
+                /* Space between menu items */
+            }
+
+            nav {
+                width: 400px;
+                padding-left: 2px;
+                margin-left: 2px;
+                display: flex;
+                align-items: center;
+            }
+
+            .nav a {
+                width: 50px;
+            }
+
 
             .section,
             .hero-section {
@@ -125,6 +149,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <img src="image/main_logo.webp" alt="coc logo" class="logo">
@@ -230,4 +255,5 @@
         </div>
     </footer>
 </body>
+
 </html>
