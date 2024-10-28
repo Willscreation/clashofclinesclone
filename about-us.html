@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Clash of Clans</title>
-    <link rel="stylesheet" href="main.css"> 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body{
+        body {
             background-color: rgba(0, 0, 0, 0.5);
         }
+
         .wrapper {
             max-width: 1000px;
             margin: 20px auto;
@@ -54,13 +55,17 @@
         }
 
         .team {
-            margin-top: 50px;
+            margin-top: 40px;
+        }
+
+        .team h2 {
+            margin-bottom: 10px;
         }
 
         .team-members {
             display: flex;
-            justify-content: space-evenly;
-            flex-wrap:wrap;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .member {
@@ -72,7 +77,7 @@
         .member img {
             width: 120px;
             height: 120px;
-            border-radius: 0%;
+            border-radius: 200px;
             border: 3px solid #e67e22;
             margin-bottom: 10px;
             margin-top: 10px;
@@ -89,6 +94,127 @@
             color: #bdc3c7;
         }
 
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e65c00;
+        }
+
+        h2 {
+            color: #ff6600;
+            transition: color 0.3s ease;
+        }
+
+        h2:hover {
+            color: #e65c00;
+        }
+
+        a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #e65c00;
+        }
+
+        .contact-section {
+            background-image: url('your_background_image.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 50px;
+            color: white;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #ff6600;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contact-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-color: #333;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin-top: 0px;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #ff6600;
+            color: #000;
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e65c00;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .icons i {
+            font-size: 24px;
+            color: white;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .icons i:hover {
+            color: #ff6600;
+        }
     </style>
 </head>
 <body>
@@ -148,10 +274,22 @@
                     </div>
                 </div>
             </div>
-            <div class="contact">
+            
+            <div class="contact-section">
                 <h1>Contact us</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus expedita optio molestiae minus eligendi aut neque eveniet, fugit magnam, voluptate, delectus dolores qui fugiat! Exercitationem consectetur impedit aliquam placeat deserunt.</p>
-
+                <p>Need Help or Have Feedback? Our community is here to support you! If you encounter any issues or want
+                    to provide feedback on the game, visit our support center or join the conversation on our official
+                    forums. Your input helps make the Clash of Clans experience even better for everyone.</p>
+                <form action="your_form_handler_url" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="icons">
+                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-phone"></i>
+                </div>
             </div>
         </div>
     </div>

@@ -7,11 +7,8 @@
     <link rel="stylesheet" href="main.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             color: #333;
-            margin: 0;
-            padding: 0;
         }
 
         .container {
@@ -40,7 +37,8 @@
         }
 
         .faq-section {
-            margin-top: 40px;
+            margin-top: 30px;
+            margin-bottom: 20px;
         }
 
         .faq-section h3 {
@@ -48,6 +46,7 @@
         }
 
         .faq-item {
+            margin-top: 20px;
             margin-bottom: 15px;
         }
 
@@ -61,18 +60,12 @@
             margin: 5px 0 0;
         }
 
-        .social-links a {
-            display: inline-block;
-            margin-right: 10px;
-            text-decoration: none;
-            color: #3498db;
-        }
-
         .disclaimer {
             font-size: 0.8em;
             color: #888;
             margin-top: 20px;
         }
+
         .wrapper {
             max-width: 1000px;
             margin: 20px auto;
@@ -102,64 +95,63 @@
         </div>
     </header>
     <div class="wrapper">
-    <div class="container">
-        <!-- Introduction Section -->
-        <h1>Download Clash of Clans Now!</h1>
-        <p>Join millions of players worldwide as you build your village, raise a clan, and compete in epic Clan Wars!
-            Ready to build, defend, and conquer? Download Clash of Clans and start your adventure today.</p>
+        <div class="container">
+            <!-- Introduction Section -->
+            <h1>Download Clash of Clans Now!</h1>
+            <p>Join millions of players worldwide as you build your village, raise a clan, and compete in epic Clan
+                Wars!
+                Ready to build, defend, and conquer? Download Clash of Clans and start your adventure today.</p>
 
-        <!-- Download Buttons -->
-        <div class="download-buttons">
-            <a href="https://apps.apple.com/app/clash-of-clans/id529479190" target="_blank">
-                <img src="image/appstore.webp" alt="Download on App Store">
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans" target="_blank">
-                <img src="image/googleplay.webp" alt="Download on Google Play">
-            </a>
-        </div>
-
-        <!-- System Requirements -->
-        <h2>System Requirements</h2>
-        <p><strong>iOS:</strong> Requires iOS 9.0 or later. Compatible with iPhone, iPad, and iPod touch.</p>
-        <p><strong>Android:</strong> Requires Android 4.4 and up.</p>
-
-        <!-- Game Trailer -->
-        <h2>Gameplay Trailer</h2>
-        <video controls autoplay muted>
-            <source src="videoplayback (1).mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-        <!-- FAQ Section -->
-        <div class="faq-section">
-            <h2>Frequently Asked Questions (FAQs)</h2>
-
-            <div class="faq-item">
-                <h4 onclick="toggleFaq(1)">How do I download and install Clash of Clans on Android?</h4>
-                <p id="faq1">You can download it from the Google Play Store by clicking the download button above.</p>
+            <!-- Download Buttons -->
+            <div class="download-buttons">
+                <a href="https://apps.apple.com/app/clash-of-clans/id529479190" target="_blank">
+                    <img src="image/appstore.webp" alt="Download on App Store">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans" target="_blank">
+                    <img src="image/googleplay.webp" alt="Download on Google Play">
+                </a>
             </div>
 
-            <div class="faq-item">
-                <h4 onclick="toggleFaq(2)">What should I do if the game doesn’t install?</h4>
-                <p id="faq2">Ensure that you have enough storage space on your device, and that your OS meets the
-                    minimum requirements. Try restarting your device and then attempting the installation again.</p>
+            <!-- System Requirements -->
+            <h2>System Requirements</h2>
+            <p><strong>iOS:</strong> Requires iOS 9.0 or later. Compatible with iPhone, iPad, and iPod touch.</p>
+            <p><strong>Android:</strong> Requires Android 4.4 and up.</p>
+
+            <!-- Game Trailer -->
+            <h2>Gameplay Trailer</h2>
+            <video controls autoplay muted>
+                <source src="videoplayback (1).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2>Frequently Asked Questions (FAQs)</h2>
+
+                <div class="faq-item">
+
+                    <h4 onclick="toggleFaq(1)">How do I download and install Clash of Clans on Android?</h4>
+                    <p id="faq1">You can download it from the Google Play Store by clicking the download button above.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 onclick="toggleFaq(2)">What should I do if the game doesn’t install?</h4>
+                    <p id="faq2">Ensure that you have enough storage space on your device, and that your OS meets the
+                        minimum requirements. Try restarting your device and then attempting the installation again.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 onclick="toggleFaq(3)">How can I recover my lost village?</h4>
+                    <p id="faq3">If you've lost access to your village, you can recover it by logging in with your Supercell ID or contacting Supercell's support.</p>
+                </div>
             </div>
 
-            <div class="faq-item">
-                <h4 onclick="toggleFaq(3)">How can I recover my lost village?</h4>
-                <p id="faq3">If you've lost access to your village, you can recover it by logging in with your Supercell
-                    ID or contacting Supercell's support.</p>
+            <!-- Disclaimer -->
+            <div class="disclaimer">
+                <p>Clash of Clans is a trademark of Supercell. This website is not affiliated with, endorsed, sponsored, or specifically approved by Supercell, and Supercell is not responsible for the operation or content of this site.</p>
             </div>
-        </div>
-
-        <!-- Disclaimer -->
-        <div class="disclaimer">
-            <p>Clash of Clans is a trademark of Supercell. This website is not affiliated with, endorsed, sponsored, or
-                specifically approved by Supercell, and Supercell is not responsible for the operation or content of
-                this site.</p>
         </div>
     </div>
-</div>
     <script>
         // JavaScript for FAQ toggle
         function toggleFaq(faqNumber) {
@@ -171,7 +163,7 @@
             }
         }
     </script>
-    
+
     <footer class="footer">
         <!-- Top section with social links and download buttons -->
         <div class="top-section">
