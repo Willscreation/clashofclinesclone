@@ -1,1 +1,1 @@
-# clashofclinesclone
+# clashofclansclone
