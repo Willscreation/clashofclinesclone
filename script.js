@@ -40,19 +40,4 @@ function logout() {
     document.getElementById('logout-button').classList.add('hidden');
 }
 
-const togglePassword = document.querySelector("#togglePassword");
-const passwordInput = document.querySelector("#password");
-const openEye = document.querySelector(".open");
-const closedEye = document.querySelector(".closed");
-
-togglePassword.addEventListener("click", function () {
-    // Toggle the password field type between password and text
-    const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
-    passwordInput.setAttribute("type", type);
-
-    // Toggle between the open and closed eye
-    openEye.classList.toggle("closed");
-    closedEye.classList.toggle("closed");
-});
-
 
