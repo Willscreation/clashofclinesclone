@@ -91,7 +91,7 @@
                     <li><a href="download.html">Download</a></li>
                 </ul>
             </nav>
-            <a href="login.html" class="cta-button">Login</a>
+            <a href="login.html"><button class="cta-button" id="auth-btn">Sign in</button></a>
         </div>
     </header>
     <div class="wrapper">
@@ -192,5 +192,34 @@
             <a href="https://supercell.com/en/#">Manage Cookies</a>
         </div>
     </footer>
+    <SCript>
+        document.addEventListener("DOMContentLoaded", function () {
+            const authBtn = document.getElementById("auth-btn");
+
+            // Check login status and update button text
+            function updateAuthButton() {
+                if (localStorage.getItem("isLoggedIn") === "true") {
+                    authBtn.textContent = "sign out";
+                } else {
+                    authBtn.textContent = "sign in";
+                }
+            }
+
+            // Initialize button state
+            updateAuthButton();
+
+            // Toggle login/logout action
+            authBtn.addEventListener("click", function () {
+                if (localStorage.getItem("isLoggedIn") === "true") {
+                    localStorage.removeItem("isLoggedIn");
+                    alert("You have been logged out.");
+                    updateAuthButton();
+                    window.location.href = "login.html"; // Redirect to login page after alert
+                } else {
+                    window.location.href = "login.html"; // Redirect to login page
+                }
+            });
+        });
+    </SCript>
 </body>
 </html>
