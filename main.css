@@ -154,7 +154,8 @@ nav ul li a:hover {
     color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
+    
     .footer .top-section {
         flex-direction: column;
         align-items: flex-start;
@@ -162,5 +163,6 @@ nav ul li a:hover {
 
     .footer .download-buttons a {
         margin-top: 10px;
+        align-items: flex-start;
     }
 }
