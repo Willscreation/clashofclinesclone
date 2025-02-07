@@ -17,7 +17,7 @@ html {
 header {
     background-color: #000;
     color: #ffffff;
-    padding: 15px 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,8 +25,6 @@ header {
 
 .logo {
     height: 60px;
-    width: auto;
-    margin-right: 20px;
 }
 
 nav ul {
@@ -44,7 +42,7 @@ nav  a {
     display: flex;
     text-decoration: none;
     color: #ffffff;
-    padding: 1em 2em;
+    padding: 10px;
     transition: color 0.3s ease;
 }
 
@@ -130,7 +128,7 @@ nav ul li a:hover {
 
 .footer {
     background-color: #000;
-    padding: 20px 40px;
+    padding: 20px;
     color: white;
 }
 
@@ -172,7 +170,7 @@ nav ul li a:hover {
     color: #fff;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     #open, #close{
         display: block;
     }

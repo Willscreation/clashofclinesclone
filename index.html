@@ -16,7 +16,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 30px;
+            padding: 10px;
             background-color: white;
         }
 
@@ -32,7 +32,7 @@
 
 
         .content h1 {
-            font-size: 39px;
+            font-size: 2em;
             font-weight: bold;
             color: #ffffff;
             margin-bottom: 10px;
@@ -46,14 +46,12 @@
         }
 
         .download-buttons {
-            margin-left: 40px;
-            width: 365px;
+            width: auto;
             height: 70px;
         }
 
         .download-buttons a {
             display: inline-block;
-            margin-right: 10px;
             padding: 10px;
         }
 
@@ -110,6 +108,22 @@
                 margin-bottom: 20px;
             }
         }
+
+        @media (max-width: 768px) {
+            .section,
+            .hero-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+             .phone-image {
+                max-width: 75%;
+            }
+
+            .content {
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -145,12 +159,12 @@
         <div class="hero-content">
             <h1 style="color: #fff;">Welcome to Clash of Clans</h1>
             <p>Join the battle and build your empire!</p>
-            <a href="login.html" class="cta-button">Play Now</a>
+            <a href="download.html" class="cta-button">Download Now</a>
         </div>
     </section>
     <div class="hero-section">
         <!-- Left Side: Image -->
-        <div class="hero-image">
+        <div class="phone-image">
             <img src="image/image1.webp" alt="Clash of Clans Mobile Image">
         </div>
         <!-- Right Side: Text and Buttons -->
@@ -227,49 +241,7 @@
             <a href="https://supercell.com/en/#">Manage Cookies</a>
         </div>
     </footer>
-    <SCript>
-        document.addEventListener("DOMContentLoaded", function () {
-            const authBtn = document.getElementById("auth-btn");
-
-            // Check login status and update button text
-            function updateAuthButton() {
-                if (localStorage.getItem("isLoggedIn") === "true") {
-                    authBtn.textContent = "sign out";
-                } else {
-                    authBtn.textContent = "sign in";
-                }
-            }
-
-            // Initialize button state
-            updateAuthButton();
-
-            // Toggle login/logout action
-            authBtn.addEventListener("click", function () {
-                if (localStorage.getItem("isLoggedIn") === "true") {
-                    localStorage.removeItem("isLoggedIn");
-                    alert("You have been logged out.");
-                    updateAuthButton();
-                    window.location.href = "login.html"; // Redirect to login page after alert
-                } else {
-                    window.location.href = "login.html"; // Redirect to login page
-                }
-            });
-        });
-
-        const openButton = document.getElementById('open')
-        const navbar = document.getElementById('navbar')
-
-        function openSidebar() {
-            navbar.classList.add('show')
-            openButtton.setAttribute('aria-expanded','ture')
-        }
-
-        function closeSidebar() {
-            navbar.classList.remove('show')
-            openButtton.setAttribute('aria-expanded','false')
-        }
-    </SCript>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
