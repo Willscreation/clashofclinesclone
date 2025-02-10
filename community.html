@@ -245,55 +245,11 @@
         <div class="bottom-section">
             <a href="https://supercell.com/en/terms-of-service/#2">Terms of Service</a>
             <a href="https://supercell.com/en/privacy-policy/?">Privacy Policy</a>
-            <a href="https://supercell.com/en/parents/">Parent's Guide</a>
-            <a href="https://supercell.com/en/safe-and-fair-play/">Safe and Fair Play Policy</a>
-            <a href="https://supercell.com/en/our-legal-documents/">Other Legal Docs</a>
             <a href="https://supercell.com/en/for-media/">For Media</a>
             <a href="https://supercell.com/en/our-domains/">Our Domains</a>
             <a href="https://supercell.com/en/#">Manage Cookies</a>
         </div>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const authBtn = document.getElementById("auth-btn");
-
-            // Check login status and update button text
-            function updateAuthButton() {
-                if (localStorage.getItem("isLoggedIn") === "true") {
-                    authBtn.textContent = "sign out";
-                } else {
-                    authBtn.textContent = "sign in";
-                }
-            }
-
-            // Initialize button state
-            updateAuthButton();
-
-            // Toggle login/logout action
-            authBtn.addEventListener("click", function () {
-                if (localStorage.getItem("isLoggedIn") === "true") {
-                    localStorage.removeItem("isLoggedIn");
-                    alert("You have been logged out.");
-                    updateAuthButton();
-                    window.location.href = "login.html"; // Redirect to login page after alert
-                } else {
-                    window.location.href = "login.html"; // Redirect to login page
-                }
-            });
-        });
-
-        const openButton = document.getElementById('open')
-        const navbar = document.getElementById('navbar')
-
-        function openSidebar() {
-            navbar.classList.add('show')
-            openButtton.setAttribute('aria-expanded','ture')
-        }
-
-        function closeSidebar() {
-            navbar.classList.remove('show')
-            openButtton.setAttribute('aria-expanded','false')
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
